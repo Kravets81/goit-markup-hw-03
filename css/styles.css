@@ -132,16 +132,13 @@ body {
 /* hero  */
 
 .hero {
+  padding-bottom: 200px;
+  padding-top: 200px;
+
   background-color: var(--back-color);
 }
 
-.hero-content {
-  max-width: 696px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 200px;
-  padding-top: 200px;
-}
+.hero-content {}
 
 .hero-title {
   font-weight: 900;
@@ -151,8 +148,11 @@ body {
   text-transform: uppercase;
   color: var(--text-color);
   text-align: center;
-  margin-bottom: 30px;
 
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -163,12 +163,13 @@ body {
   letter-spacing: 0.06em;
   color: var(--text-color);
   cursor: pointer;
-  border: 1px solid var(--activ-color);
+  border: none;
   background-color: var(--activ-color);
   text-align: center;
   border-radius: 4px;
 
   display: block;
+  padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -210,6 +211,9 @@ body {
 }
 
 /* discription */
+.discription-content {
+  padding-bottom: 94px;
+}
 
 .discription-title {
   font-weight: 700;
@@ -224,7 +228,6 @@ body {
 .discription-list {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
 .description-img {
@@ -233,16 +236,20 @@ body {
 
 /* profile */
 
+
+.profile-unit {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--section-color);
+}
+
 .profile-list {
   display: flex;
   gap: 30px;
   text-align: center;
-  padding-bottom: 94px;
+
 }
 
-.profile-unit {
-  background-color: var(--section-color);
-}
 
 .profile-title {
   font-weight: 700;
@@ -251,13 +258,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .profile-item {
   width: 270px;
-  height: 368px;
   background-color: var(--main-bgcolor);
   box-shadow: 0px 1px 3px var(--shadow-color);
   border-radius: 0px 0px 4px 4px;
@@ -280,6 +285,7 @@ body {
   font-size: 16px;
   line-height: 1.18;
   color: var(--secondary-color);
+  margin-bottom: 30px;
 }
 
 /* footer  */
@@ -313,18 +319,15 @@ body {
 /* portfolio */
 
 .portfolio {
-  padding-bottom: 94px;
-}
-
-.portfolio-content {
   padding-top: 94px;
-  margin-bottom: 50px;
+  padding-bottom: 94px;
 }
 
 .portfolio-list {
   display: flex;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 50px;
 }
 
 .portfolio-button {
@@ -375,7 +378,7 @@ body {
 .portfolio-border {
   border: 1px solid var(--portfolio-border-color);
   border-top: none;
-  padding-top: 20px;
+  padding: 20px 24px;
 }
 
 .portfolio-subtitle {
@@ -384,8 +387,6 @@ body {
   line-height: 2.00;
   letter-spacing: 0.06em;
 
-  margin-left: 24px;
-  margin-right: 24px;
   margin-bottom: 4px;
 }
 
@@ -393,8 +394,4 @@ body {
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-color);
-
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 20px;
 }
